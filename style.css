@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    box-shadow: none;
+}
+body{
+background: wheat;
+}
+.heading{
+    background: rgba(121, 53, 53, 0.705);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 10px;
+    color: rgba(255, 255, 0, 0.616);
+    font-size: 30px;
+}
+.title{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.minionImage{
+    height: 50px;
+    width: 50px;
+}
+.minionImage img{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+#inputTxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(243, 243, 183);
+}
+.outputTitle{
+    display: flex;
+    margin: 0.5rem ,0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+.translateBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;  
+}
+.translateBtn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    font-size: x-large;
+    background: burlywood;
+    box-shadow: brown 3px 3px;
+    border-radius: 10px;
+    cursor: grab;
+    outline: none;
+}
+.translateBtn button:active{
+    color: brown;
+    box-shadow: none;
+    transform: translateY(5px);
+    cursor: grabbing;
+}
+.translateBtn button:hover{
+    background-color: rgba(222, 184, 135, 0.548)
+}
+#outputTxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(255, 180, 167);
+}
+
+@media(max-width:400px){
+    .translateBtn{
+        width: 90vw;
+    }
+    .heading{
+        font-size: 20px;
+    }
+}
